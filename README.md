@@ -15,4 +15,4 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-I'm a code artisan who exercises his inventive mind.
+I'm a code artisan who exercises the inventive mind.
