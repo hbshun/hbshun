@@ -50,6 +50,7 @@ a:hover { text-decoration: underline; }
 }
 .topbar .brand { font-weight: 600; font-size: 14px; letter-spacing: .01em; }
 .topbar .book { color: var(--muted); font-size: 13px; }
+.topbar .book:empty { display: none; }
 .topbar .book::before { content: "/"; margin-right: 10px; color: var(--line); }
 
 .sidebar { padding: 22px 14px 40px 18px; }
