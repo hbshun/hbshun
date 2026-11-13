@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="日记">
+  <rect width="64" height="64" rx="12" fill="#23423D"/>
+  <rect x="14" y="12" width="36" height="40" rx="4" fill="#F7F0E1"/>
+  <path d="M14 16a4 4 0 0 1 4-4h7v40h-7a4 4 0 0 1-4-4V16z" fill="#D97757"/>
+  <path d="M31 29h13M31 36h13M31 43h8" stroke="#8A7C67" stroke-width="3" stroke-linecap="round"/>
+  <path d="M45 12v11l-3.5-2.5L38 23V12z" fill="#E8B04B"/>
+</svg>
