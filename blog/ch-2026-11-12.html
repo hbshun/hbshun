@@ -19,17 +19,25 @@
 <label for="toc-toggle" class="toc-toggle-label">目录</label>
 <a class="book-link" href="index.html">日记</a>
 <nav class="toc">
-<a class="depth-0" href="ch-2026-11-13.html">11月13日 · 周五 · 第 1 篇</a>
-<a class="depth-0" href="ch-b6cbbab2-4fe5-48fe-b62c-1f904f7f6863.html">傍晚散步</a>
-<a class="depth-0 active" aria-current="page" href="ch-2026-11-12.html">11月12日 · 周四</a>
+<a class="depth-0" href="ch-b6cbbab2-4fe5-48fe-b62c-1f904f7f6863.html">吃不吃苦</a>
+<a class="depth-0" href="ch-5cfd0436-3ae7-49bc-95d7-fb37ee3c0449.html">我的电脑故事</a>
+<a class="depth-0" href="ch-c7e391d1-fc64-4521-b972-9ffee927c762.html">为什么卸载小红书</a>
+<a class="depth-0" href="ch-2026-11-13.html">垃圾麦当劳会员</a>
+<a class="depth-0 active" aria-current="page" href="ch-2026-11-12.html">macOS设置电脑名称</a>
 </nav>
 </aside>
 <main class="content">
 <article>
-<h1 class="entry-title">2026年11月12日<span class="entry-weekday">星期四</span></h1>
-<p>最近在整理以前的笔记，发现很多想法都散落在不同的地方。</p><p>打算从今天起，每天留一点时间写几行字：不必长，也不用工整，只要把当天值得记住的事情留下来。</p><ol><li><p>早上读了几页书</p></li><li><p>中午和朋友吃饭，聊到各自最近在做的事</p></li><li><p>晚上把书桌收拾干净</p></li></ol><p>先从简单的开始。</p>
+<h1 class="entry-title">macOS设置电脑名称</h1>
+<p class="entry-date">2021年4月6日 星期二</p>
+<p>mac电脑有三个名字：ComputerName，HostName，LocalHostName</p><p><strong>ComputerName电脑名称</strong></p><p>在苹果生态中是：<code>设置-&gt;共享-&gt;电脑名称</code>，想修改的话在这里直接改。</p><ul><li><p>在自己iCloud的设备管理</p></li><li><p>隔空投送中别人看到的设备名称</p></li></ul><img src="assets/e9db1c54-f10f-4feb-97cb-d1f75210ffd7.webp" alt=""><h2><strong>LocalHostName本地主机名</strong></h2><p>本地主机名是已<code>.local</code> 结尾的名字，它是给<code>Bonjour</code> 服务用来标记设备的，在修改电脑名称的时候会同步修改，你也点击编辑按钮，单独设置本地主机名。参考链接：<a target="_blank" rel="noopener noreferrer nofollow" href="https://support.apple.com/zh-cn/guide/mac-help/mchlp2322/11.0/mac/11.0"><strong>在 Mac 上更改电脑的名称或本地主机名</strong></a></p><h2><strong>HostName</strong></h2><p>而系统还有另外一个名字，apple文档中没有介绍。默认的名字是localhost；</p><ul><li><p>在终端uname -n得到的是localhost</p></li><li><p>在局域网中共享的名字</p></li><li><p>类似这种第三方app获取到的名字</p></li></ul><img src="assets/71a7e6ba-cc20-4417-a772-e6055025b8d5.webp" alt=""><p>要修改这个名字需要用命令，当然上面两个名字也可以用这个命令修改。下面三条命令分别设置三个名称：</p><pre><code class="language-bash"># 修改电脑名称
+sudo scutil --set ComputerName xxx
+# 修改本地主机名
+sudo scutil --set LocalHostName xxx
+# 修改主机名HostName
+sudo scutil --set HostName xxx</code></pre><p></p><p>原文链接：<a target="_blank" rel="noopener noreferrer nofollow" href="https://zhuanlan.zhihu.com/p/377854903">https://zhuanlan.zhihu.com/p/377854903</a></p><p></p>
 </article>
-<nav class="pager"><a class="pager-prev" href="ch-b6cbbab2-4fe5-48fe-b62c-1f904f7f6863.html"><span>上一篇</span>傍晚散步</a><span></span></nav>
+<nav class="pager"><a class="pager-prev" href="ch-2026-11-13.html"><span>上一篇</span>垃圾麦当劳会员</a><span></span></nav>
 </main>
 </div>
 </body>
