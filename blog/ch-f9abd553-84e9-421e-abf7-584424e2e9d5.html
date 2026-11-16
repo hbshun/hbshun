@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>日记 · 邦邦PaL</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="/images/logo.jpg">
+
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="/">邦邦PaL</a>
+<a class="book" href="index.html">日记</a>
+</header>
+<div class="layout">
+<aside class="sidebar">
+<input id="toc-toggle" class="toc-toggle" type="checkbox">
+<label for="toc-toggle" class="toc-toggle-label">目录</label>
+<a class="book-link" href="index.html">日记</a>
+<nav class="toc">
+<a class="depth-0" href="ch-b6cbbab2-4fe5-48fe-b62c-1f904f7f6863.html">吃不吃苦</a>
+<a class="depth-0" href="ch-d4b301c9-9414-4ada-b755-46216a2f1743.html">我的时间都去哪儿了</a>
+<a class="depth-0" href="ch-5cfd0436-3ae7-49bc-95d7-fb37ee3c0449.html">我的电脑故事</a>
+<a class="depth-0" href="ch-c7e391d1-fc64-4521-b972-9ffee927c762.html">为什么卸载小红书</a>
+<a class="depth-0 active" aria-current="page" href="ch-f9abd553-84e9-421e-abf7-584424e2e9d5.html">关于知识库，我想要的是什么</a>
+<a class="depth-0" href="ch-1718d798-f97e-44a1-a975-72cb99af0dbb.html">我的职业生涯</a>
+<a class="depth-0" href="ch-2026-11-13.html">垃圾麦当劳会员</a>
+<a class="depth-0" href="ch-2026-11-12.html">macOS设置电脑名称</a>
+</nav>
+</aside>
+<main class="content">
+<article>
+<h1 class="entry-title">关于知识库，我想要的是什么</h1>
+<p class="entry-date">2023年10月23日 星期一</p>
+<p>心里想的太多了，为什么每次都是在反思自己要做什么，而不是在分享自己做了什么。 不过还是要反思，要不然怎么进步，虽然现在还是在原地打转，但至少在转，而没有停下来。</p><p>关于知识的整理，一直是杂乱的，不知道记在什么地方。 其实当年的Gitbook还是挺好的一个工具，在一个git仓库里，只有纯粹的内容文件，没有杂七杂八的支持文件，比如package.json,node_modules等等这些，只需要一个命令就可以进行构建，预览等等，cli是按装到global目录下的；而且还提供了GUI的编辑器，类似现在的Typora吧。当然也有一些不足的地方，比如首页目录的展示也是markdown文件，配置起来有些乏力。</p><p>我想做的是可以是基于文件系统的数据库系统，每个文件夹是一个仓库，也是一个数据库，可以便于用git管理，git可以跟踪到文件内容的变更。纯文本文件为什么乏力呢，文件系统只提供了简单的文件名和文件内容两个属性吧，可能还有文件创建修改日期等，仅此而已，日期还会经常改变，复制到另一台电脑上，日期就变成了当前时间。为了弥补这个不足，现在用的这个Docusaurus和hexo等，都是在markdown文件的头部有一些配置项之类的部分，叫做Front-matter？如下所示，这部分当然是放在文件内容中的。</p><pre><code>---
+title: Hello World
+date: 2023/7/13 20:46:25
+---
+</code></pre><p>如果用数据库的形式，最简单的方式可能是json/yaml等格式化文本，来保持每个文件的属性，就可以解放正文内容的部分，正文就可以单纯的去写文章了。用这种方式也便于扩展属性，当然它也有自己的不足，比如文档的属性与正文就分离开了，需要去不同的地方编辑，这时就需要一个可视化的编辑器来支持了。就类似，我们使用sql或者可视化IDE来编辑数据库内容一样，底层的数据是如何存储的我们并不关心。</p><ul><li><p>基于文件系统的数据库系统，便于用git来管理</p></li><li><p>文件夹是一个仓库，数据库，根目录会有一个文件或文件夹来表明，例如<code>.git</code>表明这个文件夹是一个git仓库，<code>package.json</code>表明这个文件夹是一个npm模块</p></li><li><p>提供工具来管理这个仓库，类似数据库管理系统DBMS，工具同时接口给人来使用</p></li><li><p>可视化工具</p></li></ul><p>想想又复杂了，先从简单的来。</p>
+</article>
+<nav class="pager"><a class="pager-prev" href="ch-c7e391d1-fc64-4521-b972-9ffee927c762.html"><span>上一篇</span>为什么卸载小红书</a><a class="pager-next" href="ch-1718d798-f97e-44a1-a975-72cb99af0dbb.html"><span>下一篇</span>我的职业生涯</a></nav>
+</main>
+</div>
+</body>
+</html>
